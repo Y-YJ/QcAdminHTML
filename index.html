@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Simple - 简！ </title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+    <meta name="keywords" content="layui,ui,ui框架,前端框架,JS组件,Simple">
+    <meta name="description" content="Simple 是一个基于layui框架，一个轻量，简约，包含丰富模块化前端框架，帮您快速构建网站。">
+    <link rel="stylesheet" href="./static/css/s.css">
+    <link rel="stylesheet" href="./static/css/extend.css">
+    <script src="./static/layui.js"></script>
+</head>
+<body>
+
+
+<div class="admin-header">
+    <div class="header-logo ">
+        <img src="./static/img/logo/logoadmin.png" alt="">
+    </div>
+
+    <ul class="header-left">
+        <li><a href=""><i class="layui-icon layui-icon-website"></i></a></li>
+        <li><a href=""><i class="layui-icon layui-icon-flag"></i></a></li>
+        <li><a href=""><i class="layui-icon layui-icon-search"></i></a></li>
+    </ul>
+
+    <ul class="layui-nav header-right">
+        <li class="layui-nav-item  header-right-item">
+            <a href=""><img src="./static/img/faces/tx.png" class="layui-nav-img">芥末萌萌哒</a>
+            <dl class="layui-nav-child">
+                <dd><a href="javascript:;">修改信息</a></dd>
+                <dd><a href="javascript:;">安全管理</a></dd>
+                <dd><a href="./pages/login.html">退了</a></dd>
+            </dl>
+        </li>
+
+        <li class="layui-nav-item  header-right-item">
+            <a href="">我的消息<span class="layui-badge-dot"></span></a>
+        </li>
+
+        <li class="layui-nav-item header-right-item">
+            <a href=""><i class="layui-icon layui-icon-close"></i></a>
+        </li>
+
+    </ul>
+    <div class="layui-clear"></div>
+</div>
+<div class="admin-menu fold">
+    <p class="admin-menu-f" id="admin-menu-f"><i class="layui-icon layui-icon-more"></i></p>
+
+    <ul>
+        <li class="menu-item active">
+            <a _href="./pages/index.html"><i class="layui-icon layui-icon-diamond text-yellow"></i><span class="wb-nav-title"> 首页</span>
+            </a>
+            <span class="menu-item-tip">首  页</span>
+        </li>
+        <li class="menu-item ">
+            <a _href="./pages/set.html"><i class="layui-icon layui-icon-console "></i><span class="wb-nav-title"> 仪表盘</span></a>
+            <span class="menu-item-tip">仪表盘</span>
+        </li>
+
+        <li class="menu-item ">
+            <a href="#"><i class="layui-icon layui-icon-component"></i><span class="wb-nav-title"> 组件库</span> </a>
+            <span class="menu-item-tip">组件库</span>
+        </li>
+
+        <li class="menu-item ">
+            <a href="#"><i class="layui-icon layui-icon-table"></i> <span class="wb-nav-title"> 表格库</span> </a>
+            <span class="menu-item-tip">表格库</span>
+        </li>
+
+
+        <li class="menu-item">
+            <a href="#"><i class="layui-icon layui-icon-radio"></i> <span class="wb-nav-title"> 表单库</span> </a>
+            <span class="menu-item-tip">表单库</span>
+        </li>
+
+
+        <li class="menu-item">
+            <a href="#"><i class="layui-icon layui-icon-chart"></i><span class="wb-nav-title"> 图表库</span> </a>
+            <span class="menu-item-tip">图表库</span>
+        </li>
+
+
+        <li class="menu-item">
+            <a href="#"><i class="layui-icon layui-icon-template-1 "></i><span class="wb-nav-title"> 页面库</span> </a>
+            <span class="menu-item-tip">页面库</span>
+        </li>
+
+
+        <li class="menu-item item-bottom">
+            <a _href="./pages/set.html"><i class="layui-icon  layui-icon-set"></i><span class="wb-nav-title"> 系统设置</span></a>
+            <span class="menu-item-tip">系统设置</span>
+        </li>
+
+
+    </ul>
+</div>
+
+<div class="page-content" style="position: fixed;width: 100%;height:100%">
+    <iframe src='./pages/index.html' frameborder="0" scrolling="yes" class="weIframe" style="width: 100%;height:100%;">
+
+    </iframe>
+</div>
+
+
+
+<script>
+    layui.config({
+        base: './static/'
+        , version: '101100'
+    }).use('admin');
+    layui.use(['admin', 'jquery'], function () {
+
+    });
+</script>
+</body>
+</html>

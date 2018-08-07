@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Simple - 简！ </title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+    <meta name="keywords" content="layui,ui,ui框架,前端框架,JS组件,Simple">
+    <meta name="description" content="Simple 是一个基于layui框架，一个轻量，简约，包含丰富模块化前端框架，帮您快速构建网站。">
+    <link rel="stylesheet" href="../static/css/s.css">
+    <link rel="stylesheet" href="./css/extend.css">
+    <script src="../static/layui.js"></script>
+</head>
+<body>
+<div class="admin-block" style="height:100%;width: 100%">
+    <div class="block">
+        <div class="block-action">
+            <div class="layui-btn-group">
+                <button class="layui-btn layui-btn-sm"><i class="layui-icon">&#xe608;</i> 动作</button>
+            </div>
+        </div>
+
+        <div class="block-tab">
+            <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">参数设置</li>
+                    <li>参数设置</li>
+                </ul>
+
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+                        <div class="block-body">
+                            <div class="typo">
+                                <p>.</p>
+                                <p>..</p>
+                                <p>...</p>
+                                <p>....</p>
+                                <p>.....</p>
+                                <p>......</p>
+                                <p>.......</p>
+                                <p>占位符 </p>
+                                <p>.........</p>
+                                <p>.......</p>
+                                <p>......</p>
+                                <p>.....</p>
+                                <p>....</p>
+                                <p>...</p>
+                                <p>..</p>
+                                <p>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-tab-item">
+                        <div class="block-body">
+                            <p>毛都没有...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    layui.config({
+        base: '../static/'
+        , version: '101100'
+    }).use('admin');
+    layui.use(['admin', 'jquery'], function () {
+
+    });
+</script>
+</body>
+</html>

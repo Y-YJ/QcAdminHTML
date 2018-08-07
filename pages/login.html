@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Simple - 简！ </title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+    <meta name="keywords" content="layui,ui,ui框架,前端框架,JS组件,Simple">
+    <meta name="description" content="Simple 是一个基于layui框架，一个轻量，简约，包含丰富模块化前端框架，帮您快速构建网站。">
+    <link rel="stylesheet" href="../static/css/s.css">
+    <script src="../static/layui.js"></script>
+</head>
+<body>
+
+<link rel="stylesheet" href="../static/css/login.css">
+
+<div class="layui-container">
+    <div class="layui-row">
+        <div class="layui-col-md3 layui-col-md-offset9">
+            <div class="loginbox">
+                <div class="loginbox-header">
+                    <h3>欢迎，Simple！</h3>
+                </div>
+                <form action="" class="layui-form" method="post">
+                    <div class="layui-row layui-form-item">
+                        <div class="layui-col-md12">
+                            <div class="layui-input-block no-label">
+                                <label class="input-icon layui-icon layui-icon-username" for="username"></label>
+                                <input type="text" name="username" id="username" lay-verify="required"
+                                       placeholder="用户名" class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-row  layui-form-item">
+                        <div class="layui-col-md12">
+                            <div class="layui-input-block no-label">
+                                <label class="input-icon layui-icon layui-icon-password" for="password"></label>
+                                <input type="password" name="password" id="password" lay-verify="required"
+                                       placeholder="密码" class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item loginbox-check">
+                        <input type="checkbox" name="remember" lay-skin="primary" title="记住密码" value="1">
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary"><span>记住密码</span><i
+                                class="layui-icon layui-icon-ok"></i></div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="forlogin">登 入</button>
+                    </div>
+                    <div class="layui-form-item loginbox-other">
+                        <label>社交账号登入</label>
+                        <a href="javascript:;"><i class="layui-icon layui-icon-login-qq"></i></a>
+                        <a href="javascript:;"><i class="layui-icon layui-icon-login-wechat"></i></a>
+                        <a href="javascript:;"><i class="layui-icon layui-icon-login-weibo"></i></a>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    layui.use(['element', 'code', 'form', 'jquery'], function () {
+        var form = layui.form;
+        var $ = layui.jquery;
+        var layer = layui.layer;
+
+        //监听提交
+        form.on('submit(forlogin)', function (data) {
+            layer.msg(JSON.stringify(data.field));
+            window.location.href='../index.html';
+            return false;
+        });
+    });
+</script>
+
+</body>
+</html>

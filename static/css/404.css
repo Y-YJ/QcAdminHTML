@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/*
+@name: s
+@description: SCSS.2018-07-28
+@author: MustardS，http://www.we63.com
+*/
+/* 专用英文字体是 */
+/* 专用数字字体 */
+/* 主题颜色 */
+/* 颜色不循环，只定义 */
+/* 背景色 */
+/* 边框色 */
+/* 字体body文本颜色 */
+/* 标题色 等同黑色 */
+/* 描述色 */
+/* 链接颜色 */
+/* 容器内部间隔线 */
+/* input的提示 */
+/* 底部边框颜色，或者横线颜色 */
+/* 底部阴影 */
+/* 混合颜色 */
+/* 含有圆角 */
+/* 含有阴影 */
+/* 含有边框 */
+/* hover 动效，动弹 */
+/* hover 动效，阴影 */
+/* 404页面 500等单页面 */
+.page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden; }
+  .page-container .page-shape1 {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: #FF5722;
+    background: linear-gradient(180deg, #FF5722, #ec5f5f); }
+  .page-container .page-shape2 {
+    position: absolute;
+    bottom: 50px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: #1E9FFF;
+    background: linear-gradient(180deg, #1E9FFF, #2083fe); }
+
+.item-error {
+  font-size: 130px;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #252629; }
+
+.item-title {
+  font-size: 34px;
+  margin-bottom: 0.8rem;
+  color: #999999; }
+
+.item-desc {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #999999; }

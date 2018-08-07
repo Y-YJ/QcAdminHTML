@@ -1,0 +1,65 @@
+.example {
+	@include has-shadow;
+	@include has-radius;
+	background-color: #fff;
+	padding: 1.5rem;
+	margin-bottom: 3.5rem;
+}
+
+.example p:last-child {
+	margin-bottom: 0;
+}
+
+
+.example-color {
+	@include has-radius;
+	@include has-shadow;
+	padding: 1rem;
+}
+
+/* 图标demo */
+
+ .site-doc-icon {
+	 margin-bottom: 50px;
+	 font-size: 0;
+ }
+
+.site-doc-icon li {
+	display: inline-block;
+	vertical-align: middle;
+	width: 141.5px;
+	height: 105px;
+	line-height: 25px;
+	padding: 20px 0;
+	margin-right: -1px;
+	margin-bottom: -1px;
+	border: 1px solid  $border-color;
+	font-size: 14px;
+	text-align: center;
+	color: $title-color;
+	transition: all .3s;
+}
+
+
+.site-doc-icon li .layui-icon {
+	display: inline-block;
+	font-size: 36px;
+}
+.site-doc-icon li .doc-icon-name, .site-doc-icon li .doc-icon-code {
+	color: $des-color;
+}
+
+.site-doc-icon li .doc-icon-fontclass {
+	height: 40px;
+	line-height: 20px;
+	padding: 0 5px;
+	font-size: 13px;
+	color: $title-color;
+}
+
+.site-doc-icon li:hover {
+	background-color: #f2f2f2;
+	color: $title-color;
+}
+
+

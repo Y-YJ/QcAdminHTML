@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Simple - 简！ </title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+    <meta name="keywords" content="layui,ui,ui框架,前端框架,JS组件,Simple">
+    <meta name="description" content="Simple 是一个基于layui框架，一个轻量，简约，包含丰富模块化前端框架，帮您快速构建网站。">
+    <link rel="stylesheet" href="../static/css/s.css">
+    <link rel="stylesheet" href="./css/extend.css">
+    <script src="../static/layui.js"></script>
+</head>
+<body>
+
+<div class="admin-submenu">
+    <div style="width: 100%; height: 100%">
+        <div class="submenu-scene">欢迎使用</div>
+        <div class="submenu-item">首页</div>
+        <ul>
+            <li class="submenu-item-children active"><a _href="indexing.html">色彩</a></li>
+            <li class="submenu-item-children"><a _href="typo.html">挂件</a></li>
+
+            <li class="submenu-item-children"><a _href="button.html">按钮</a></li>
+
+            <li class="submenu-item-children"><a _href="image.html">图文<span class="layui-badge-dot"></span></a></li>
+
+            <li class="submenu-item-children"><a _href="form.html">表单<span class="layui-badge-dot"></span></a></li>
+        </ul>
+
+        <div id="admin-submenu-c">
+            <i class="layui-icon layui-icon-prev"></i>
+        </div>
+
+    </div>
+
+</div>
+<div class="admin-content" style="height:100%;">
+    <div class="layui-row layui-col-space30" style="height:100%;">
+        <div class="layui-col-md12" style="height:100%;">
+            <div class="adminpageheader">
+                <h2 class="adminpagetitle">当前位置：<a href="">后台空模板</a></h2>
+            </div>
+
+            <iframe src='indexing.html' frameborder="0" scrolling="yes" class="weIframeChild" style="width: 100%;height:100%;"></iframe>
+
+            <div class="admin-footer">
+                <img src="../static/img/logo/footlogo.png" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="admin-panel">
+    <div class="layui-collapse">
+
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title panel-item"><i class="layui-icon layui-icon-face-smile-fine"></i> <span
+                    class="sfqt">后台播报</span></h2>
+            <div class="layui-colla-content layui-show item-color">
+                <ul>
+                    <li>更新了后台整体布局代码，剔除行内样式</li>
+                    <li>冲突样式放低优先级，不影响样式覆盖</li>
+                    <li>修复菜单搜索文字弹跳的Bug</li>
+                </ul>
+            </div>
+        </div>
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title panel-item"><i class="layui-icon layui-icon-speaker"></i> <span class="sfqt">内部公告</span>
+            </h2>
+            <div class="layui-colla-content item-color">暂无</div>
+        </div>
+
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title panel-item"><i class="layui-icon layui-icon-log"></i> <span
+                    class="sfqt">工作日志</span></h2>
+            <div class="layui-colla-content item-color">暂无</div>
+        </div>
+
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title panel-item"><i class="layui-icon layui-icon-survey"></i> <span class="sfqt">我的工单</span>
+            </h2>
+            <div class="layui-colla-content item-color">暂无</div>
+        </div>
+
+
+        <div class="layui-colla-item ">
+            <h2 class="layui-colla-title panel-item"><i class="layui-icon layui-icon-notice"></i> <span class="sfqt">系统更新</span>
+            </h2>
+            <div class="layui-colla-content item-color">
+                <ul>
+                    <li>暂无</span> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-colla-item">
+            <h2 class="layui-colla-title panel-item"><i class="layui-icon layui-icon-about"></i> <span
+                    class="sfqt">联系我们</span></h2>
+            <div class="layui-colla-content item-color">暂无</div>
+        </div>
+    </div>
+
+
+    <div class="admin-panel-a">
+        <div id="admin-panel-c"><i class="layui-icon layui-icon-spread-left"></i> 收起面板</div>
+    </div>
+</div>
+
+
+<script>
+    layui.config({
+        base: '../static/'
+        , version: '101100'
+    }).use('admin');
+    layui.use(['admin', 'jquery'], function () {
+
+    });
+</script>
+</body>
+</html>

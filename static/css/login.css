@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*
+@name: s
+@description: SCSS.2018-07-28
+@author: MustardS，http://www.we63.com
+*/
+/* 专用英文字体是 */
+/* 专用数字字体 */
+/* 主题颜色 */
+/* 颜色不循环，只定义 */
+/* 背景色 */
+/* 边框色 */
+/* 字体body文本颜色 */
+/* 标题色 等同黑色 */
+/* 描述色 */
+/* 链接颜色 */
+/* 容器内部间隔线 */
+/* input的提示 */
+/* 底部边框颜色，或者横线颜色 */
+/* 底部阴影 */
+/* 混合颜色 */
+/* 含有圆角 */
+/* 含有阴影 */
+/* 含有边框 */
+/* hover 动效，动弹 */
+/* hover 动效，阴影 */
+/* login 页面 */
+body {
+  background-image: url("../img/bg/3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.loginbox {
+  padding: 2.5rem 2rem 1.5rem;
+  background-color: #fff;
+  margin-top: 230px;
+  box-shadow: 0 10px 60px 0 rgba(29, 29, 31, 0.09);
+  border-radius: 2px; }
+  .loginbox .layui-icon-login-qq {
+    color: #3492ED; }
+  .loginbox .layui-icon-login-wechat {
+    color: #4DAF29; }
+  .loginbox .layui-icon-login-weibo {
+    color: #CF1900; }
+  .loginbox .loginbox-header h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #252629; }
+  .loginbox .loginbox-other a i {
+    position: relative;
+    top: 2px;
+    font-size: 23px;
+    margin-left: 10px; }
